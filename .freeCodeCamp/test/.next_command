@@ -70,3 +70,9 @@ git commit -m "test: verify all game scenarios work correctly"
 git status
 git add number_guess.sh
 git commit -m "feat: implement number guessing logic"
+pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql
+git status
+git add .
+git status
+git add number_guess.sql
+git commit -m "chore: adding database structure"
